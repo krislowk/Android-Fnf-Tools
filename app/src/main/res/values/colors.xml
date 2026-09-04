@@ -1,0 +1,10 @@
+<resources>
+    <color name="bw_black">#000000</color>
+    <color name="bw_near_black">#0A0A0A</color>
+    <color name="bw_panel">#141414</color>
+    <color name="bw_white">#FFFFFF</color>
+    <color name="bw_off_white">#E8E8E8</color>
+    <color name="bw_grey">#8A8A8A</color>
+    <color name="bw_grey_dim">#4A4A4A</color>
+    <color name="bw_hairline">#2A2A2A</color>
+</resources>

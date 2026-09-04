@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bw_black"
+    android:padding="28dp">
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZEN"
+        android:textColor="@color/bw_white"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FNF TOOLKIT"
+        android:textColor="@color/bw_grey"
+        android:textSize="13sp"
+        android:letterSpacing="0.3"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnSpritesheetConverter"
+        style="@style/ZenButtonOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Spritesheet Converter" />
+
+    <Button
+        android:id="@+id/btnIconGrid"
+        style="@style/ZenButtonOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Icon Grid Creator" />
+
+    <Button
+        android:id="@+id/btnGifToSpritesheet"
+        style="@style/ZenButtonOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GIF to Spritesheet" />
+
+</LinearLayout>

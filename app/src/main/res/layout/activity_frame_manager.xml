@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bw_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/ZenHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rename Frames"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            style="@style/ZenBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap any name to edit it. This is exactly what ends up in the XML."
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <CheckBox
+                android:id="@+id/cbSelectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textColor="@color/bw_grey"
+                android:layout_marginEnd="12dp" />
+
+            <EditText
+                android:id="@+id/etBulkPrefix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Rename selected to…"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnApplyBulk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Apply"
+                android:textAllCaps="true"
+                android:textColor="@color/bw_white"
+                android:background="@drawable/bw_button_outline_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bw_hairline"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrames"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bw_hairline"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnPackSave"
+            style="@style/ZenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pack &amp; Save" />
+
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bw_thumb_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSavedInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/bw_grey"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnDone"
+            style="@style/ZenButtonOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Done"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/bw_black"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateTint="@color/bw_white" />
+
+        <TextView
+            android:id="@+id/tvLoadingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Packing…"
+            android:textColor="@color/bw_white"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

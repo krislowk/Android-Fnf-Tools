@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <CheckBox
+        android:id="@+id/cbSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp" />
+
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textColor="@color/bw_grey_dim"
+        android:textSize="11sp"
+        android:fontFamily="monospace" />
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bw_thumb_bg"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="10dp" />
+
+    <EditText
+        android:id="@+id/etFramePrefix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:textColor="@color/bw_white"
+        android:textColorHint="@color/bw_grey_dim"
+        android:background="@drawable/bw_edittext_underline" />
+
+    <TextView
+        android:id="@+id/tvFrameSuffix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/bw_grey_dim"
+        android:fontFamily="monospace"
+        android:textSize="14sp" />
+
+</LinearLayout>

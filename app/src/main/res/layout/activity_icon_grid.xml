@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bw_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/ZenHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Icon Grid Creator"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvBody"
+            style="@style/ZenBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick icon images. Next you'll get a chance to rename every icon before it's packed into a uniform grid + XML."
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnPickIcons"
+            style="@style/ZenButtonOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Icon Images" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0 icons selected"
+            android:textColor="@color/bw_grey"
+            android:fontFamily="monospace" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@drawable/bw_hairline" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etCellSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cell size (px, e.g. 150)"
+            android:text="150"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etColumns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Columns (0 = auto)"
+            android:text="0"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etOutputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Output file name (no extension)"
+            android:text="icon-grid" />
+
+        <Button
+            android:id="@+id/btnConvert"
+            style="@style/ZenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Rename Icons →" />
+
+    </LinearLayout>
+</ScrollView>
